@@ -4,7 +4,7 @@
   "description": "Personal Resume Site",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass --watch sass -o css",
     "start": "live-server; compile:sass",
     "dev": "concurrently --kill-others \"npm run compile:sass\" \"live-server\"",
     "deploy": "node-sass sass/main.scss css/style.css"
