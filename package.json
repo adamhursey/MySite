@@ -6,7 +6,8 @@
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
     "start": "live-server; compile:sass",
-    "dev": "concurrently --kill-others \"live-server\" \"npm run compile:sass\""
+    "dev": "concurrently --kill-others \"npm run compile:sass\" \"live-server\"",
+    "deploy": "node-sass sass/main.scss css/style.css"
   },
   "repository": {
     "type": "git",
