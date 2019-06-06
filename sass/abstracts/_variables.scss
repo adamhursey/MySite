@@ -2,11 +2,30 @@
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
+
+$color-light-orange: #ffb900;
+$color-dark-orange: #ff7730;
+
+$color-light-blue: #2998ff;
+$color-dark-blue: #5643fa;
+
+$color-light-grey-1: #f7f7f7;
+$color-light-grey-2: #b9b9b9;
+$color-light-grey-3: #eee;
+
 $color-dark-grey: #777;
 $color-white: #fff;
 $color-black: #000;
 
 // GRID
-$grid-width: 114rem;
+// $grid-width: 114rem;
+$grid-width: 90vw;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
+
+
+// RANDOM
+$info-card-height: 55rem;
+
+// FONT
+$default-font-size: 1.6rem;
