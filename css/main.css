@@ -39,6 +39,14 @@ body {
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes popup {
+  0% {
+    transform: translateY(0) scale(1); }
+  50% {
+    transform: translateY(-7rem) scale(1.2); }
+  100% {
+    transform: translateY(0) scale(1); } }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -86,7 +94,10 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
-  transition: all .2s; }
+  transition: all .2s;
+  animation-name: popup;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0, 0, 0, 1.4); }
   @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
