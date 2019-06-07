@@ -43,7 +43,7 @@ body {
   0% {
     transform: translateY(0) scale(1); }
   50% {
-    transform: translateY(-7rem) scale(1.2); }
+    transform: translateY(-8rem) scale(1.2); }
   100% {
     transform: translateY(0) scale(1); } }
 
@@ -52,7 +52,8 @@ body {
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
-  color: #777; }
+  color: #777;
+  padding: 3rem; }
 
 .heading-primary {
   color: #fff;
@@ -94,10 +95,11 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
-  transition: all .2s;
-  animation-name: popup;
-  animation-duration: 3s;
-  animation-timing-function: cubic-bezier(0, 0, 0, 1.4); }
+  transition: all .2s; }
+  .heading-secondary--animated {
+    animation-name: popup;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0, 0, 0.18, 1); }
   @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }

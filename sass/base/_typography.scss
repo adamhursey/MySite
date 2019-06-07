@@ -3,57 +3,57 @@
 //    font-weight: 400;
 //    line-height: 1.7;
 //    color: $color-dark-grey;
-//    padding: 3rem;
 // }
 
 // .heading-primary {
-//    color: $color-white;
-//    text-transform: uppercase;
-//    backface-visibility: hidden;
-//    margin-bottom: 6rem;
-//    margin-right: -3.5rem;
-
-
-//    &--main {
-//       display: block;
-//       font-size: 6rem;
-//       font-weight: 400;
-//       letter-spacing: 3.5rem;
-      
-//       animation-name: moveInLeft;
-//       animation-duration: 1s;
-//       animation-timing-function: ease-out;
-//    }
-
-//    &--sub {
-//       display: block;
-//       font-size: 2rem;
-//       font-weight: 700;
-//       letter-spacing: 1.75rem;
-//       animation-name: moveInRight;
-//       animation-duration: 1s;
-//       animation-timing-function: ease-out;
-//    }
-// }
-
-// .heading-secondary {
-//    font-size: 4rem;
-//    text-transform: uppercase;
-//    font-weight: 700;
-//    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-//    display: inline-block;
-//    -webkit-background-clip: text;
-//    color: transparent;
-// }
-
+    //    color: $color-white;
+    //    text-transform: uppercase;
+    //    backface-visibility: hidden;
+    //    margin-bottom: 6rem;
+    //    margin-right: -3.5rem;
+    
+    
+    //    &--main {
+        //       display: block;
+        //       font-size: 6rem;
+        //       font-weight: 400;
+        //       letter-spacing: 3.5rem;
+        
+        //       animation-name: moveInLeft;
+        //       animation-duration: 1s;
+        //       animation-timing-function: ease-out;
+        //    }
+        
+        //    &--sub {
+            //       display: block;
+            //       font-size: 2rem;
+            //       font-weight: 700;
+            //       letter-spacing: 1.75rem;
+            //       animation-name: moveInRight;
+            //       animation-duration: 1s;
+            //       animation-timing-function: ease-out;
+            //    }
+            // }
+            
+            // .heading-secondary {
+                //    font-size: 4rem;
+                //    text-transform: uppercase;
+                //    font-weight: 700;
+                //    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+                //    display: inline-block;
+                //    -webkit-background-clip: text;
+                //    color: transparent;
+                // }
+                
 body {
-   font-family: "Lato", sans-serif;
-   font-weight: 400;
-   /*font-size: 16px;*/
-   line-height: 1.7;
-   color: $color-dark-grey;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /*font-size: 16px;*/
+    line-height: 1.7;
+    color: $color-dark-grey;
+    padding: 3rem;
 }
-
+                
 .heading-primary {
    color: $color-white;
    text-transform: uppercase;
@@ -106,9 +106,11 @@ body {
    letter-spacing: .2rem;
    transition: all .2s;
    
-   animation-name: popup;
-   animation-duration: 3s;
-   animation-timing-function: cubic-bezier(0, 0, 0, 1.4);
+    &--animated{
+        animation-name: popup;
+        animation-duration: 3s;
+        animation-timing-function: cubic-bezier(0, 0, 0.18, 1);
+    }
 
    @include respond(tab-port) {
        font-size: 3rem;
