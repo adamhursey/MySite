@@ -1,0 +1,96 @@
+
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  min-height: $info-card-height;
+
+  &__side {
+      font-size: 2rem;
+      min-height: $info-card-height;
+      transition: all 0.8s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      backface-visibility: hidden;
+      border-radius: 1%;
+      overflow: hidden;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+      &--front {
+         background-color: $color-white;
+      }
+
+      &--back {
+      background-image: linear-gradient(
+         to right bottom,
+         $color-dark-blue,
+         $color-light-blue
+      );
+      transform: rotateY(180deg);
+    }
+  }
+
+
+  // front side styling
+  &__picture {
+    background-image: url(../images/headshot_square.jpg);
+    background-position: left 50% top 20%;
+    background-size: cover;
+    height: 33rem;
+  }
+
+  &__heading {
+    font-size: 2vim;//2.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-white;
+    letter-spacing: 1rem;
+    position: absolute;
+    top: 25rem;
+    right: 2rem;
+    text-align: right;
+    width: 60%;
+  }
+  
+  &__heading-span{
+    padding: 1rem 1.5rem;
+    background-color: rgba($color-black, .85);
+  }
+
+  &__details{
+    padding: 1rem 2rem;
+
+
+    ul {
+      list-style: none;
+      margin: 0 auto;
+
+      li {
+        font-size: 1.7rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-light-grey-3;
+        }
+        
+      }
+    }
+
+  }
+
+}
+
+// ----------------------------------------------------------
+//    Do some JS to make this flip happen on button click
+// ----------------------------------------------------------
+
+//    &__side--front {
+//     transform: rotateY(-180deg);
+//   }
+
+//   .flip &__side--back {
+//     transform: rotateY(0);
+//   }
