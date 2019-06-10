@@ -119,6 +119,9 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.u-normal-text {
+  font-size: 1.6rem; }
+
 .u-center-text {
   text-align: center; }
 
@@ -131,7 +134,7 @@ body {
   text-transform: uppercase;
   padding: .5rem 1rem; }
 
-.u-normal-text {
+.u-float-right {
   float: right; }
 
 .u-debug {
