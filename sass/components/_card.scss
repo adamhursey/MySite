@@ -23,14 +23,14 @@
          background-color: $color-white;
       }
 
-      &--back {
-      background-image: linear-gradient(
-         to right bottom,
-         $color-dark-blue,
-         $color-light-blue
-      );
-      transform: rotateY(180deg);
-    }
+    //   &--back {
+    //   background-image: linear-gradient(
+    //      to right bottom,
+    //      $color-dark-blue,
+    //      $color-light-blue
+    //   );
+    //   transform: rotateY(180deg);
+    // }
   }
 
 

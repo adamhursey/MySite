@@ -206,9 +206,6 @@ body {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
       background-color: #fff; }
-    .card__side--back {
-      background-image: linear-gradient(to right bottom, #5643fa, #2998ff);
-      transform: rotateY(180deg); }
   .card__picture {
     background-image: url(../images/headshot_square.jpg);
     background-position: left 50% top 20%;
