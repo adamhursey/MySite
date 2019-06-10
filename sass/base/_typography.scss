@@ -129,7 +129,7 @@ body {
 }
 
 .paragraph {
-   font-size: 2rem;
+   font-size: $default-font-size;
    padding: 1rem 4rem;
 
    &:not(:last-child) {
