@@ -108,12 +108,14 @@ body {
       font-size: 2.5rem; } }
 
 .heading-tertiary {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  color: #55c57a;
   font-weight: 700;
   text-transform: uppercase; }
 
 .paragraph {
-  font-size: 1.6rem; }
+  font-size: 2rem;
+  padding: 1rem 4rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -131,6 +133,9 @@ body {
 
 .u-normal-text {
   float: right; }
+
+.u-debug {
+  background-color: red; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -203,6 +208,7 @@ body {
       transform: rotateY(180deg); }
   .card__picture {
     background-image: url(../images/headshot_square.jpg);
+    background-position: left 50% top 20%;
     background-size: cover;
     height: 33rem; }
   .card__heading {
@@ -234,7 +240,7 @@ body {
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../images/greens.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   position: relative;
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 85%, 0 65%, 0 0);
   clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 85%, 0 65%, 0 0); }
@@ -257,7 +263,7 @@ body {
     text-align: center; }
 
 .row {
-  max-width: 90vw;
+  max-width: 70vw;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -270,7 +276,7 @@ body {
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
   .row .col-1-of-1 {
-    width: 90vw; }
+    width: 70vw; }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -283,6 +289,8 @@ body {
     width: calc((100% - 6rem) / 2); }
   .row .col-3-of-4 {
     width: calc(((100% - 3 * 6rem) / 4) * 3 + 6rem * 2); }
+  .row .col-1-of-5 {
+    width: calc((100% - 4 * 6rem) / 5); }
 
 .section-about {
   background-color: #f7f7f7;
