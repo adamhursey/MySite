@@ -1,0 +1,64 @@
+.overlay-module {
+  background-color: $color-white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  height: $proj-mod-height;
+  width: $proj-mod-width;
+  transform: translate(-50%, -50%);
+
+   &__header {
+      width: 100%;
+      position: absolute;
+      text-align: center;
+      margin-top: 2rem;
+   }
+
+   &__content {
+      position: relative;
+      top: 10rem;
+      padding: 0 5rem 5rem 5rem;
+      // left: 3rem;
+      // right: 30rem;
+      height: 90%;
+      width: 100%;
+
+      &--button {
+         position: absolute;
+         left: 50%;
+         bottom: 10%;
+         transform: translate(-50%, 0%);
+      }
+   }
+}
+
+.close-overlay--button {
+   position: absolute;
+   right: 1.5rem;
+   top: 1.5rem;
+   width: 3rem;
+   height: 3rem;
+   opacity: 0.3;
+ }
+ .close-overlay--button:hover {
+   opacity: 1;
+ }
+ .close-overlay--button:before, .close-overlay--button:after {
+   position: absolute;
+   left: 15px;
+   content: ' ';
+   height: 33px;
+   width: 2px;
+   background-color: #333;
+ }
+ .close-overlay--button:before {
+   transform: rotate(45deg);
+ }
+ .close-overlay--button:after {
+   transform: rotate(-45deg);
+ }
+
+ .module-image {
+   width: 80%;
+   margin-left: 10%;
+ }

@@ -6,6 +6,10 @@
   position: relative;
   min-height: $info-card-height;
 
+  &--project{
+    min-height: $proj-card-height;
+  }
+
   &__side {
       font-size: 2rem;
       min-height: $info-card-height;
@@ -36,10 +40,22 @@
 
   // front side styling
   &__picture {
-    background-image: url(../images/headshot_square.jpg);
     background-position: left 50% top 20%;
     background-size: cover;
     height: 33rem;
+    
+    &--about-me{
+      background-image: url(../images/headshot_square.jpg);
+    }
+    
+    &--cotd{
+      background-image: url(../images/cotd.png);      
+    }
+    
+    &--r5{
+      background-image: url(../images/rolling5.png);            
+    }
+
   }
 
   &__heading {
