@@ -31,5 +31,3 @@ r5Btn.addEventListener('click', function() {
    overlay.scrollTop = 0;
 
 }, false);
-
-r5Btn.click();
