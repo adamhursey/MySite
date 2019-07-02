@@ -169,8 +169,14 @@ body {
 .u-float-right {
   float: right; }
 
-.u-debug {
-  background-color: red; }
+.r-debug {
+  background-color: red !important; }
+
+.b-debug {
+  background-color: blue !important; }
+
+.p-debug {
+  background-color: purple !important; }
 
 .u-hidden {
   display: none; }
@@ -183,7 +189,8 @@ body {
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
-  -webkit-filter: blur(0px); }
+  -webkit-filter: blur(0px);
+  cursor: pointer; }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -206,7 +213,11 @@ body {
 .btn--green {
   background-color: #55c57a;
   color: #fff;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  font-weight: 500; }
+  @media only screen and (max-width: 37.5em) {
+    .btn--green {
+      font-size: 1.4rem; } }
 
 .btn::after {
   content: "";
@@ -301,7 +312,8 @@ body {
   width: 100%;
   height: auto;
   transition: .5s ease;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  cursor: pointer; }
   .project-image:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -337,33 +349,27 @@ body {
 
 .overlay-module {
   background-color: #fff;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  height: 70vh;
   width: 70vw;
-  transform: translate(-50%, -50%); }
+  margin: 5rem auto;
+  overflow: auto;
+  z-index: 999; }
   .overlay-module__header {
     width: 100%;
-    position: absolute;
     text-align: center;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    display: block; }
   .overlay-module__content {
     position: relative;
-    top: 10rem;
+    display: block;
     padding: 0 5rem 0rem 5rem;
-    height: 85%;
     width: 100%; }
     .overlay-module__content--button {
-      position: absolute;
-      left: 50%;
-      bottom: 10%;
-      transform: translate(-50%, 0%); }
+      margin: 5rem 0 2rem 0; }
 
 .close-overlay--button {
-  position: absolute;
+  position: relative;
+  float: right;
   right: 1.5rem;
-  top: 1.5rem;
   width: 3rem;
   height: 3rem;
   opacity: 0.3; }
@@ -375,9 +381,12 @@ body {
   position: absolute;
   left: 15px;
   content: ' ';
-  height: 33px;
+  height: 3.3rem;
   width: 2px;
   background-color: #333; }
+  @media only screen and (max-width: 37.5em) {
+    .close-overlay--button:before, .close-overlay--button:after {
+      height: 1.5rem; } }
 
 .close-overlay--button:before {
   transform: rotate(45deg); }
@@ -473,7 +482,8 @@ body {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 100vw; }
+    width: 100vw;
+    z-index: -1; }
 
 [aria-hidden="true"] {
   transition: opacity .5s, z-index 0s .5s;

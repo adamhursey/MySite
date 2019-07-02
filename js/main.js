@@ -16,15 +16,15 @@ var body = document.body,
    })
 });
 
-cotdBtn.addEventListener('click', function() { 
+cotdBtn.addEventListener('click', function() {
    overlay.setAttribute('aria-hidden', false);
    r5Overlay.className += ' u-hidden';
    body.classList.toggle('noscroll', true);
    overlay.scrollTop = 0;
-   
+
 }, false);
 
-r5Btn.addEventListener('click', function() { 
+r5Btn.addEventListener('click', function() {
    overlay.setAttribute('aria-hidden', false);
    cotdOverlay.className += ' u-hidden';
    body.classList.toggle('noscroll', true);

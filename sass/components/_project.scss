@@ -14,12 +14,14 @@
       height: auto;
       transition: .5s ease;
       backface-visibility: hidden;
+       cursor: pointer;
+
 
       &:hover {
          transform: translateY(-0.3rem);
          box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
          -webkit-filter: blur(0.000001px);
-         
+
          &::after {
          transform: scaleX(1.4) scaleY(1.6);
          opacity: 0;
@@ -44,15 +46,15 @@
    transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%)
  }
- 
+
  .project:hover .image {
    opacity: 0.3;
  }
- 
+
  .project:hover .middle {
    opacity: 1;
  }
- 
+
  .text {
    background-color: #4CAF50;
    color: white;
