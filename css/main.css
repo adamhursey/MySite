@@ -349,8 +349,8 @@ body {
   .overlay-module__content {
     position: relative;
     top: 10rem;
-    padding: 0 5rem 5rem 5rem;
-    height: 90%;
+    padding: 0 5rem 0rem 5rem;
+    height: 85%;
     width: 100%; }
     .overlay-module__content--button {
       position: absolute;
@@ -418,6 +418,9 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
   .row::after {
     content: "";
     display: table;
@@ -426,6 +429,13 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-1 {
     width: 70vw; }
   .row .col-1-of-2 {
@@ -482,8 +492,7 @@ body {
   margin-top: -45rem; }
 
 .section-projects {
-  background-color: #f7f7f7;
-  padding: 15rem 0; }
+  background-color: #f7f7f7; }
 
 .section-tech {
   background-color: #f7f7f7;
