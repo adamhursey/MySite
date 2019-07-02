@@ -231,8 +231,10 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
+  margin: 0 auto;
   min-height: 55rem;
-  min-width: 30rem; }
+  min-width: 34rem;
+  max-width: 60rem; }
   .card--project {
     min-height: 95rem; }
   .card__side {

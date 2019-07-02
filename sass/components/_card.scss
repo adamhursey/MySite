@@ -4,8 +4,10 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
+  margin: 0 auto;
   min-height: $info-card-height;
-  min-width: 30rem;
+  min-width: 34rem;
+  max-width: 60rem;
 
   &--project{
     min-height: $proj-card-height;
