@@ -5,6 +5,7 @@
   -moz-perspective: 150rem;
   position: relative;
   min-height: $info-card-height;
+  min-width: 30rem;
 
   &--project{
     min-height: $proj-card-height;
@@ -43,17 +44,17 @@
     background-position: left 50% top 20%;
     background-size: cover;
     height: 33rem;
-    
+
     &--about-me{
       background-image: url(../images/headshot_square.jpg);
     }
-    
+
     &--cotd{
-      background-image: url(../images/cotd.png);      
+      background-image: url(../images/cotd.png);
     }
-    
+
     &--r5{
-      background-image: url(../images/rolling5.png);            
+      background-image: url(../images/rolling5.png);
     }
 
   }
@@ -70,7 +71,7 @@
     text-align: right;
     width: 60%;
   }
-  
+
   &__heading-span{
     padding: 1rem 1.5rem;
     background-color: rgba($color-black, .85);
@@ -91,7 +92,7 @@
         &:not(:last-child) {
           border-bottom: 1px solid $color-light-grey-3;
         }
-        
+
       }
     }
 
