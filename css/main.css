@@ -513,7 +513,6 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   padding: 1.5rem 4rem;
   border-radius: 10rem;
-  transition: all 0.2s;
   text-transform: uppercase;
   -webkit-filter: blur(0px);
   cursor: pointer; }
@@ -611,7 +610,8 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__button {
   background-color: transparent;
-  box-shadow: 0 0 0; }
+  box-shadow: 0 0 0;
+  border-radius: 0; }
 
 .navigation__checkbox:checked ~ .navigation__button:hover {
   transform: translateY(0); }

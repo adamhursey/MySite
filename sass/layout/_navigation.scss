@@ -21,7 +21,6 @@
     box-shadow: 0 1rem 3rem rgba($color-black, .1);
     padding: 1.5rem 4rem;
     border-radius: 10rem;
-    transition: all 0.2s;
     text-transform: uppercase;
     -webkit-filter: blur(0.000001px);
     cursor: pointer;
@@ -142,6 +141,7 @@
   &__checkbox:checked ~ &__button {
     background-color: transparent;
     box-shadow: 0 0 0;
+    border-radius: 0;
     // cursor: default;
     // visibility: hidden;
   }
