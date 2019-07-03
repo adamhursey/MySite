@@ -159,10 +159,6 @@
    height: 3rem;
    opacity: 0.3;
 
-   @include respond (tab-port) {
-
-   }
-
  }
  .close-nav--button:hover {
    opacity: 1;
@@ -174,9 +170,6 @@
    height: 3.3rem;
    width: 2px;
    background-color: #333;
-   @include respond (phone) {
-    height: 1.5rem
-   }
  }
  .close-nav--button:before {
    transform: rotate(45deg);

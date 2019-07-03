@@ -634,9 +634,6 @@ body {
   height: 3.3rem;
   width: 2px;
   background-color: #333; }
-  @media only screen and (max-width: 37.5em) {
-    .close-nav--button:before, .close-nav--button:after {
-      height: 1.5rem; } }
 
 .close-nav--button:before {
   transform: rotate(45deg); }
