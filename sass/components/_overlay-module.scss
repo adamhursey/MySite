@@ -23,7 +23,7 @@
         margin: 5rem 0 2rem 0;
       }
    }
-    z-index: 999;
+    z-index: 5000;
 }
 
 .close-overlay--button {
@@ -41,6 +41,7 @@
  }
  .close-overlay--button:hover {
    opacity: 1;
+  cursor: pointer;
  }
  .close-overlay--button:before, .close-overlay--button:after {
    position: absolute;

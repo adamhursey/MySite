@@ -5,6 +5,7 @@ var body = document.body,
     cotdBtn = document.querySelector('.project-image--cotd');
     r5Btn = document.querySelector('.project-image--r5');
     closeOverlayBtns = document.querySelectorAll('.close-overlay');
+  navigationBtn = document.querySelector('.navigation__button');
 
 [].forEach.call(closeOverlayBtns, function(btn) {
    btn.addEventListener('click', btn => {
@@ -31,3 +32,13 @@ r5Btn.addEventListener('click', function() {
    overlay.scrollTop = 0;
 
 }, false);
+
+navigationBtn.addEventListener('click', function () {
+  if (navigationBtn.innerHTML == 'Contact') {
+    navigationBtn.innerHTML = '<div class="close-nav close-nav--button"></div>';
+  } else {
+    navigationBtn.innerHTML = 'Contact';
+  }
+})
+
+
