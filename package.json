@@ -21,7 +21,7 @@
   "homepage": "https://github.com/adamhursey/MySite#readme",
   "devDependencies": {
     "concurrently": "^4.1.0",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "compass": "^0.1.1"
