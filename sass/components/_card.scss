@@ -1,5 +1,3 @@
-
-
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -9,26 +7,26 @@
   min-width: 28rem;
   max-width: 60rem;
 
-  &--project{
+  &--project {
     min-height: $proj-card-height;
   }
 
   &__side {
-      font-size: 2rem;
-      min-height: $info-card-height;
-      transition: all 0.8s ease;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      backface-visibility: hidden;
-      border-radius: 1%;
-      overflow: hidden;
-      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    font-size: 2rem;
+    min-height: $info-card-height;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 1%;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
-      &--front {
-         background-color: $color-white;
-      }
+    &--front {
+      background-color: $color-white;
+    }
 
     //   &--back {
     //   background-image: linear-gradient(
@@ -40,29 +38,27 @@
     // }
   }
 
-
   // front side styling
   &__picture {
     background-position: left 50% top 20%;
     background-size: cover;
     height: 33rem;
 
-    &--about-me{
-      background-image: url(../images/headshot_square.jpg);
+    &--about-me {
+      background-image: url(../images/Hursey_0540-min.jpg);
     }
 
-    &--cotd{
+    &--cotd {
       background-image: url(../images/cotd.png);
     }
 
-    &--r5{
+    &--r5 {
       background-image: url(../images/rolling5.png);
     }
-
   }
 
   &__heading {
-    font-size: 2vim;//2.8rem;
+    font-size: 2vim; //2.8rem;
     font-weight: 400;
     text-transform: uppercase;
     color: $color-white;
@@ -74,14 +70,13 @@
     width: 60%;
   }
 
-  &__heading-span{
+  &__heading-span {
     padding: 1rem 1.5rem;
-    background-color: rgba($color-black, .85);
+    background-color: rgba($color-black, 0.85);
   }
 
-  &__details{
+  &__details {
     padding: 1rem 2rem;
-
 
     ul {
       list-style: none;
@@ -94,12 +89,9 @@
         &:not(:last-child) {
           border-bottom: 1px solid $color-light-grey-3;
         }
-
       }
     }
-
   }
-
 }
 
 // ----------------------------------------------------------
