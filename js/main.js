@@ -6,6 +6,7 @@ var body = document.body,
     r5Btn = document.querySelector('.project-image--r5');
     closeOverlayBtns = document.querySelectorAll('.close-overlay');
   navigationBtn = document.querySelector('.navigation__button');
+  age = document.querySelector('.age');
 
 [].forEach.call(closeOverlayBtns, function(btn) {
    btn.addEventListener('click', btn => {
@@ -40,5 +41,18 @@ navigationBtn.addEventListener('click', function () {
     navigationBtn.innerHTML = 'Contact';
   }
 })
+
+function getAge(dateString) {
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}
+
+age.innerText = getAge("1996/02/24")
 
 
